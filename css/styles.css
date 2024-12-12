@@ -1,0 +1,90 @@
+.franjanegra {
+    background-color: #20242e;
+    color:aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+.contenedor {
+    display: flex; /* Convierte el contenedor en un layout flex */
+    justify-content: space-between; /* Distribuye las cajas con espacio entre ellas */
+  }
+  .icon{
+    color:orangered;
+    margin: 0px 4px 0px 4px;
+  }
+  .logo{
+    height: 28px;
+    }
+  .franjablanca{
+    margin: 20px 0px 20px 0px;
+  }
+  .contenedorblanco{
+    display: flex; /* Convierte el contenedor en un layout flex */
+    justify-content: space-between; /* Distribuye las cajas con espacio entre ellas */
+  }
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .item{
+    margin: 0px 10px 0px 10px;
+    color:grey;
+  }
+  .item:hover{
+    color:orangered;
+  }
+  .contacitem:hover{
+    color:grey;
+  }
+  .foto{
+    width: 100%;
+  }
+  .franjaimagen{
+    height:650px; /* Con esto le decimos que al margen de como de grande sea la pantalla, ocupe ese porcentaje siempre*/
+    overflow: hidden; /* CON ESTO LE DECIMOS QUE TODO LO QUE SOBRA NO SE MUESTRE, SEA "RECORTA"*/
+    display:flex; /* Esto es para poder usar cositas de flex layout, como la siguiente*/
+    align-items: center; /* Con esto le decimos, que lo que contenga, en este caso la imagen, me lo pones centradito*/
+    position: relative;
+    
+  }
+  
+  html, 
+  body {
+      height: 100%;
+   } /* Con esto le decimos que body ocupe todo, sin esto, el porcentaje del 40% de arriba no serviria, porque */
+
+.wrapperparent{
+    position: absolute;
+    width: 100%;
+    opacity: .5; 
+}
+.itemfoto{
+    margin: 10px 0px 10px 0px;
+}
+.titulo{
+    color: aliceblue;
+    font-weight: bold;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.orange{
+    color:orangered;
+    font-family:'Segoe UI';
+    font-size: 16px;
+}
+.filtro{
+    background-color:black;
+    opacity: .2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
