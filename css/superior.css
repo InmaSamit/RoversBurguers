@@ -1,0 +1,24 @@
+.franjanegra {
+    background-color: #20242e;
+    color:aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+.icon{
+    color:orangered;
+    margin: 0px 4px 0px 4px;
+  }
+.contenedor {
+    display: flex; /* Convierte el contenedor en un layout flex */
+    justify-content: space-between; /* Distribuye las cajas con espacio entre ellas */
+  }
+.contacitem {
+    display:flex;
+}
+.contacitem:hover{
+    color:grey;
+  }
+@media (max-width:800px){
+    .texto-icono{
+        display:none
+    };
+}

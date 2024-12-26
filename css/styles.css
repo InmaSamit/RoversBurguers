@@ -1,27 +1,21 @@
-.franjanegra {
-    background-color: #20242e;
-    color:aliceblue;
-    padding: 20px 0px 20px 0px;
-}
-
 body {
     margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Segoe UI";
+}
+p{
+  color:grey;
 }
 
 .wrapper {
     width: 60%;
     margin: 0 auto;
 }
-.contenedor {
-    display: flex; /* Convierte el contenedor en un layout flex */
-    justify-content: space-between; /* Distribuye las cajas con espacio entre ellas */
+@media (max-width:800px){
+  .wrapper{
+    width: 90%;
   }
-  .icon{
-    color:orangered;
-    margin: 0px 4px 0px 4px;
-  }
-  .logo{
+}
+.logo{
     height: 28px;
     }
   .franjablanca{
@@ -35,15 +29,32 @@ body {
     display: flex;
     justify-content: flex-end;
   }
+  
+  @media (max-width: 800px) {
+    .contenedorblanco{
+      flex-direction: column;
+    }
+    .logo{
+      width: 30%;
+    }
+    .menu {
+      flex-direction: column;
+      gap: 20px;
+      flex:1;
+    }
+    .item{
+      text-align: center;
+      flex: 1 1 auto;
+      border-bottom: 1px solid grey;
+    }
+  }
+
   .item{
     margin: 0px 10px 0px 10px;
     color:grey;
   }
   .item:hover{
     color:orangered;
-  }
-  .contacitem:hover{
-    color:grey;
   }
   .foto{
     width: 100%;
@@ -53,8 +64,16 @@ body {
     overflow: hidden; /* CON ESTO LE DECIMOS QUE TODO LO QUE SOBRA NO SE MUESTRE, SEA "RECORTA"*/
     display:flex; /* Esto es para poder usar cositas de flex layout, como la siguiente*/
     align-items: center; /* Con esto le decimos, que lo que contenga, en este caso la imagen, me lo pones centradito*/
-    position: relative;
-    
+    position: relative;    
+  }
+  @media (max-width:800px){
+    .franjaimagen{
+      justify-content: center;
+    }
+    .foto{
+      height: 100%;
+      width: auto;
+    }
   }
   
   html, 
@@ -65,7 +84,6 @@ body {
 .wrapperparent{
     position: absolute;
     width: 100%;
-    opacity: .5; 
 }
 .itemfoto{
     margin: 10px 0px 10px 0px;
@@ -78,13 +96,100 @@ body {
 }
 .orange{
     color:orangered;
+}
+.big{    
     font-family:'Segoe UI';
     font-size: 16px;
 }
+.white{
+  color:aliceblue;
+  }
+.boton{
+  width: 100%;
+  height: 40px;
+  background-color: orangered;
+  color:aliceblue;
+  border: 2px solid orangered;
+}
+.boton:hover{
+  background-color: transparent;
+  color:orangered
+}
 .filtro{
     background-color:black;
-    opacity: .2;
+    opacity: 0.6;
     height: 100%;
     width: 100%;
     position: absolute;
+}
+.icono{
+  color:aliceblue;
+  font-size: 20px;
+}
+.iconera{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.boton-iconos{
+  width: 150px;
+}
+
+/*Aqui empiezo Our Servicies*/
+.centertitle{
+  display:flex;
+  justify-content:center;
+  gap:6px;
+  margin-top:20px;
+}
+.tachado{
+  text-decoration:line-through;
+  text-decoration-thickness:1.5px;
+  text-align: center;
+}
+.iconoservicio{
+  border: 1px solid orangered;
+  padding:3px;
+}
+.contenedorservicios{
+  display:flex;
+  flex-wrap:wrap;
+}
+.servicio{
+  width: 30%;
+  border-left: 1px solid grey;
+  padding-left: 15px;
+}
+@media (max-width:800px){
+  .servicio{
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid grey;
+    padding-top: 15px;
+  }
+}
+/*Aquí empiezo con SobreNosotras*/
+.contenedornosotras{
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemnosotras{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.fotonosotras{
+  width: 90%;
+  border: 3px solid orangered;
+}
+@media (max-width:800px){
+  .itemnosotras{
+    width:100%;
+  }
+}
+.contenedorhistoria{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
