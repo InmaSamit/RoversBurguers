@@ -1,7 +1,7 @@
 .franjanegra {
     background-color: #20242e;
     color:aliceblue;
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
 }
 .icon{
     color:orangered;
@@ -13,6 +13,7 @@
   }
 .contacitem {
     display:flex;
+    cursor: hand;
 }
 .contacitem:hover{
     color:grey;

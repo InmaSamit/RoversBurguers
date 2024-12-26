@@ -18,14 +18,14 @@ p{
 .logo{
     height: 28px;
     }
-  .franjablanca{
+.franjablanca{
     margin: 20px 0px 20px 0px;
   }
-  .contenedorblanco{
+.contenedorblanco{
     display: flex; /* Convierte el contenedor en un layout flex */
     justify-content: space-between; /* Distribuye las cajas con espacio entre ellas */
   }
-  .menu{
+.menu{
     display: flex;
     justify-content: flex-end;
   }
@@ -48,18 +48,21 @@ p{
       border-bottom: 1px solid grey;
     }
   }
-
-  .item{
+.inicio{
+    color:orangered !important;
+  } 
+.item{
     margin: 0px 10px 0px 10px;
     color:grey;
+    cursor: pointer;
   }
-  .item:hover{
+.item:hover{
     color:orangered;
   }
-  .foto{
+.foto{
     width: 100%;
   }
-  .franjaimagen{
+.franjaimagen{
     height:650px; /* Con esto le decimos que al margen de como de grande sea la pantalla, ocupe ese porcentaje siempre*/
     overflow: hidden; /* CON ESTO LE DECIMOS QUE TODO LO QUE SOBRA NO SE MUESTRE, SEA "RECORTA"*/
     display:flex; /* Esto es para poder usar cositas de flex layout, como la siguiente*/
@@ -110,6 +113,7 @@ p{
   background-color: orangered;
   color:aliceblue;
   border: 2px solid orangered;
+  cursor: pointer;
 }
 .boton:hover{
   background-color: transparent;
@@ -125,6 +129,7 @@ p{
 .icono{
   color:aliceblue;
   font-size: 20px;
+  cursor: pointer;
 }
 .iconera{
   display:flex;
@@ -150,6 +155,7 @@ p{
 .iconoservicio{
   border: 1px solid orangered;
   padding:3px;
+  cursor: pointer;
 }
 .contenedorservicios{
   display:flex;
@@ -172,16 +178,33 @@ p{
 .contenedornosotras{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 90px;
 }
 .itemnosotras{
   width: 50%;
   display: flex;
   justify-content: center;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.bordefoto{
+  position: absolute;
+  border: 3px solid orangered;
+  width:90%;
+  height: 100%;
+  transform:rotate(10deg);
+  transition: 0.5s;
+}
+
+.itemnosotras:hover .bordefoto{
+  transform: rotate(0deg);
 }
 .fotonosotras{
   width: 90%;
-  border: 3px solid orangered;
-}
+  z-index: 100;
+  }
 @media (max-width:800px){
   .itemnosotras{
     width:100%;
@@ -190,6 +213,24 @@ p{
 .contenedorhistoria{
   width: 80%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  height: 100%;
+}
+.franjatransparente{
+  display: flex;
+  justify-content: end;
+}
+.flechafinal{
+  font-size: 40px;
+  margin-right: 5px;
+  cursor: hand;
+}
+.franjafinal{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+}
+.contenedorfinal{
+  display: flex;
 }
